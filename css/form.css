@@ -1,0 +1,95 @@
+:root {
+    --light: #eee;
+    --dark: #17202A ;
+  }
+
+#sign-up-form  {
+    height: 90%;
+    width: 25vw;
+    margin: 10% 35%;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+
+#sign-in-form {
+    height: 45vh;
+    width: 25vw;
+    margin: 10% 35%;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+
+.form-heading {
+    display: inline-block;
+    margin: 2% 35% 0 37%;
+}
+
+.form-input {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 3%;
+}
+
+.form-input label::before{
+    content: '*';
+    color: red;
+}
+
+.btn {
+    background-color: var(--dark);
+    border: 1px var(--dark);
+    color: #fff;
+    font-weight: 540;
+    border-radius: 7px;
+    display: inline-block;
+    height: 40px;
+    width: 60%;
+    font-size: 100%;
+    margin: 1% 30% 2% 20%;
+}
+
+.btn:hover {
+    background-color: #1C2833;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+}
+
+input, select {
+    display: inline-block;
+    height: 2.5vh;
+    border: 1px #B2BABB solid;
+    border-radius: 5px;
+}
+
+input:hover, select:hover {
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+input:focus, select:focus {
+    outline: none !important;
+    border-color: #E5E7E9;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+select {
+    color: #17202A;
+}
+
+label {
+    font-size: large;
+    color: #424949;
+}
+
+a {
+    text-decoration: none;
+    color: #7F8C8D;
+}
+
+p {
+    display: inline-block;
+    text-align: center;
+    margin: 0 30%;
+    padding-bottom: 5%;
+    width: 40%;
+}
