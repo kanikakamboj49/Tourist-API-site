@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">	
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tourist/Home</title>
+</head>
+<body>
+    <div class="main-div">
+    <div id="navbar">
+        <h1>Tourists</h1>
+         <div class="links">
+                <a id="display">Display</a></li>
+                <a id="add" href="#add-form">Add</a>
+                <a id="update" href="#update-form">Update</a>
+                <a id="delete" href="#delete-form">Delete</a>
+                <div>
+                    <input id="search-input" onfocus="this.value=''" type="text" name="searchValue" placeholder="Search by Id"><button class="btn search-btn"><i class="fa fa-search"></i></button>
+                </div>
+         </div>
+    </div>
+    <div id="container">
+        <table id="tourists-info-table">
+            <thead>
+                <th>Id <i class='fas fa-caret-up' id="sort-dsc"></i> <i class='fas fa-caret-down' id="sort-asc"></i></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Location</th>
+            </thead>
+            <tbody id="tourist-data">
+                
+            </tbody>
+        </table> 
+        <div class="form" id="add-form">
+            <form autocomplete="off" name="my-add-form" action="">
+                <p>Add Tourist</p>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input class="input" type="text" name="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="location">Location</label>
+                    <input class="input" type="text" name="location" required>
+                </div>
+                <div class="action-btn">
+                    <button class="btn add-btn" type="submit">Add</button>
+                </div>           
+            </form>
+        </div>   
+        <br>
+        <div class="form" id="update-form">
+            <form autocomplete="off" name="my-update-form" action="">
+                <p>Update Tourist</p>
+                 <div class="form-input">
+                    <label for="id">Id</label>
+                    <input class="input" type="text" name="id" required>
+                 </div>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input class="input" type="text" name="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="location">Location</label>
+                    <input class="input" type="text" name="location" required>
+                </div>
+                <div class="action-btn">
+                    <button class="btn update-btn" type="submit">Update</button>
+                </div>           
+            </form>
+        </div>   
+        <br>
+        <div class="form" id="delete-form">
+            <form autocomplete="off" name="my-delete-form" action="">
+                <p>Delete Tourist</p>
+                 <div class="form-input">
+                    <label for="id">Id</label>
+                    <input class="input" type="text" name="id" required>
+                 </div>       
+                 <div class="action-btn">
+                    <button class="btn delete-btn" type="submit">Delete</button>
+                </div>        
+            </form>
+        </div>   
+    </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

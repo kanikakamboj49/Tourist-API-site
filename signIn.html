@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Tourist/Sign In</title>
+</head>
+<body>
+      
+    <div id="sign-in-form">
+        <form autocomplete="off">
+            <div class="form-heading">
+                <h1>SignIn</h1>
+            </div>
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input class="email" type="email" name="email" placeholder="abc@gmail.com" onfocus="this.value=''" required>
+            </div>
+            <div class="form-input"> 
+               <label for="password">Password</label>
+               <input class="password" type="password" name="password" onfocus="this.value=''" placeholder="***" required>
+            </div>
+             <button class="btn" onclick="SignIn()">Sign In</button>
+             <p>Not a User ? <a href="index.html">Sign Up</a></p>
+        </form>    
+    </div>
+    
+<script src="script/script.js"></script>
+</body>
+</html>
