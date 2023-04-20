@@ -9,14 +9,6 @@ var dscSort = document.querySelector('#sort-dsc');
 var signUpButton = document.getElementsByClassName('signup');
 var signInButton = document.getElementsByClassName('signin');
 
-searchBtn.addEventListener('click', search);
-displayBtn.addEventListener('click', displayTourists);
-ascSort.addEventListener('click',sortAsc);
-dscSort.addEventListener('click',sortDsc);
-addForm.addEventListener("submit", addTourist);
-updateForm.addEventListener("submit", updateTourist);
-deleteForm.addEventListener("submit", deleteTourist);
-
 //Sign Up Form
 function SignUp(event){
   localStorage.setItem('Email', '');
@@ -120,6 +112,14 @@ function SignIn(event){
   }
   event.preventDefault();
 }
+
+searchBtn.addEventListener('click', search);
+displayBtn.addEventListener('click', displayTourists);
+ascSort.addEventListener('click',sortAsc);
+dscSort.addEventListener('click',sortDsc);
+addForm.addEventListener("submit", addTourist);
+updateForm.addEventListener("submit", updateTourist);
+deleteForm.addEventListener("submit", deleteTourist);
 
 //fetching the data from api and storing in tourists variable
 async function getTourists() {
